@@ -1,11 +1,11 @@
-// Exemplo simples de JavaScript
+// Exemplo simples de navegação entre os capítulos
 document.addEventListener("DOMContentLoaded", function() {
-    // Adicionando um evento de clique a todos os links
-    const links = document.querySelectorAll("a");
+    const nextChapterButton = document.querySelector("#next-chapter");
 
-    links.forEach(link => {
-        link.addEventListener("click", function() {
-            alert("Você clicou em um link!");
+    if (nextChapterButton) {
+        nextChapterButton.addEventListener("click", function() {
+            alert("Carregando próximo capítulo...");
+            // Aqui você pode implementar a lógica para carregar o próximo capítulo
         });
-    });
+    }
 });
